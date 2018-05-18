@@ -18,7 +18,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-  color: #77698e;
+  color: #d6bdff;
   outline: none; }
 
 h1,
@@ -31,8 +31,7 @@ h6 {
   font-weight: 700;
   text-transform: uppercase; }
 
-hr.star-light,
-hr.star-primary {
+hr.star {
   max-width: 250px;
   margin: 25px auto 30px;
   padding: 0;
@@ -40,8 +39,7 @@ hr.star-primary {
   border: none;
   border-top: solid 5px; }
 
-hr.star-light:after,
-hr.star-primary:after {
+hr.star:after {
   font-family: FontAwesome;
   font-size: 2em;
   position: relative;
@@ -50,17 +48,17 @@ hr.star-primary:after {
   padding: 0 0.25em;
   content: '\f005'; }
 
-hr.star-light {
+section.dark hr.star {
   border-color: white; }
 
-hr.star-light:after {
+section.dark hr.star:after {
   color: white;
   background-color: #77698e; }
 
-hr.star-primary {
+sectino.light hr.star {
   border-color: #2C3E50; }
 
-hr.star-primary:after {
+section.light hr.star:after {
   color: #2C3E50;
   background-color: white; }
 
@@ -73,7 +71,7 @@ section {
     font-size: 3em;
     margin: 0; }
 
-section.success {
+section.dark {
   color: white;
   background: #77698e; }
 
@@ -193,16 +191,16 @@ header.masthead {
     header.masthead .intro-text .skills {
       font-size: 1.75em; } }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px; }
-  #portfolio .portfolio-item .portfolio-link {
+  .portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer; }
-    #portfolio .portfolio-item .portfolio-link .caption {
+    .portfolio .portfolio-item .portfolio-link .caption {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -211,9 +209,9 @@ header.masthead {
       transition: all ease 0.5s;
       opacity: 0;
       background: rgba(119, 105, 142, 0.9); }
-      #portfolio .portfolio-item .portfolio-link .caption:hover {
+      .portfolio .portfolio-item .portfolio-link .caption:hover {
         opacity: 1; }
-      #portfolio .portfolio-item .portfolio-link .caption .caption-content {
+      .portfolio .portfolio-item .portfolio-link .caption .caption-content {
         font-size: 20px;
         position: absolute;
         top: 50%;
@@ -222,20 +220,20 @@ header.masthead {
         margin-top: -12px;
         text-align: center;
         color: white; }
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+        .portfolio .portfolio-item .portfolio-link .caption .caption-content i {
           margin-top: -12px; }
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+        .portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+        .portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
           margin: 0; }
 
-#portfolio h2 {
+.portfolio h2 {
   font-size: 2em; }
 
-#portfolio * {
+.portfolio * {
   z-index: 2; }
 
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  .portfolio .portfolio-item {
     margin: 0 0 30px; } }
 
 .portfolio-modal .modal-dialog {
@@ -367,6 +365,18 @@ footer {
     color: #77698e;
     border: solid 2px white;
     background: white; }
+
+.btn-fill {
+  font-size: 20px;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+  color: #77698e;
+  border: solid 2px #77698e;;
+  background: transparent; }
+  .btn-fill.active, .btn-fill:active, .btn-fill:focus, .btn-fill:hover {
+    color: white;
+    border: solid 2px #77698e;;
+    background: #77698e; }
 
 .btn-primary {
   font-weight: 700;
