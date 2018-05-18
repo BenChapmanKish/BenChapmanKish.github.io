@@ -77,6 +77,10 @@ section.success {
   color: white;
   background: #77698e; }
 
+section.success .about-tagline {
+  padding-top: 20px; 
+  padding-bottom: 20px; }
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
