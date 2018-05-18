@@ -168,7 +168,9 @@ header.masthead {
     display: block;
     margin: 0 auto 20px;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; }
   header.masthead .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2em;
