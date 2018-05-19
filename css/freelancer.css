@@ -225,6 +225,11 @@ header.masthead {
         .portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
         .portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
           margin: 0; }
+  .portfolio .portfolio-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 350px; }
 
 .portfolio h2 {
   font-size: 2em; }
@@ -252,10 +257,16 @@ header.masthead {
     border: 0;
     border-radius: 0; }
     .portfolio-modal .modal-dialog .modal-content h2 {
+      text-transform: none; 
       font-size: 3em;
       margin: 0; }
+    .portfolio-modal .modal-dialog .modal-content h4 {
+      text-transform: none; 
+      padding-top: 10px; }
     .portfolio-modal .modal-dialog .modal-content img {
-      margin-bottom: 30px; }
+      max-height: 450px;
+      max-width: 500px;
+      padding-bottom: 20px; }
     .portfolio-modal .modal-dialog .modal-content .item-details {
       margin: 30px 0; }
 
