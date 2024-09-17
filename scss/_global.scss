@@ -82,6 +82,12 @@ section {
 section.success {
   color: white;
   background: $theme-success;
+  ul {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 @media(max-width:767px) {
   section {
@@ -89,6 +95,10 @@ section.success {
   }
   section.first {
     padding-top: 75px;
+  }
+  section.success ul {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -79,11 +79,21 @@ section.success .about-tagline {
   padding-top: 20px; 
   padding-bottom: 20px; }
 
+section.success ul {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
   section.first {
-    padding-top: 75px; } }
+    padding-top: 75px; }
+  section.success ul {
+    margin-left: 5%;
+    margin-right: 5%; } }
 
 .scroll-top {
   position: fixed;
