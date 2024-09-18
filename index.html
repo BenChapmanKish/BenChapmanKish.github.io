@@ -313,11 +313,17 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2>Pathways-Predictions: TAGLINE GOES HERE</h2>
+                  <h2>Pathways-Predictions</h2>
+                  <h4>Using a Distributed ML Server Network to match Applicants to Job Openings on a Job Board</h4>
                   <h4>2022</h4>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="img/portfolio/pathways_diagram.png" alt="">
-                  <p>PROJECT DESCRIPTION GOES HERE</p>
+                  <p>For my Capstone Project (FYDP), I designed from scratch a distributed dynamic machine learning platform that learns from user reviews to match applicants with job openings on a professional network such as Glassdoor/LinkedIn.</p>
+                  <p>This was a massive project that did build on an existing FYDP project from the year prior, but which involved the novel design of several major systems all on my own and took several terms to complete.</p>
+                  <p>To achieve my project specifications and requirements, I implemented custom data and transport layers to maximize service throughput and minimize latency between the client, master server/load balancer, and slave servers.</p>
+                  <p>I also created a custom fault-tolerant load balancer that can connect to new server instances while running, and selects the best backend server based on speed, uptime, and model accuracy for a given task.</p>
+                  <p>On top of all that, I wrote custom ML servers that each have partial database caches kept in sync by the master server, and that each contain several instances of neural networks that are optimized for different tasks.</p>
+                  <p>This was the single largest solo project I've ever worked on, and it goes far beyond just software. I invite you to read my full project report below!</p>
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -356,7 +362,8 @@
                   <h2>Music Genre Recognition on the FMA Dataset</h2>
                   <h4>2022</h4>
                   <hr class="star-primary">
-                  <p>PROJECT DESCRIPTION GOES HERE</p>
+                  <p>This project explored the use of convolutional and recurrent deep learning models, either sequentially (CRNNs) or in parallel (PR-CNNs), to perform music genre recognition on input audio files.</p>
+                  <p>The Free Music Archive dataset was used, where audio signals were vectorized by the use of Mel-frequency cepstral coefficients as input to the networks.</p>
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -400,7 +407,8 @@
                   <h2>Early Detection of Depression using Twitter Post History</h2>
                   <h4>2024</h4>
                   <hr class="star-primary">
-                  <p>PROJECT DESCRIPTION GOES HERE</p>
+                  <p>This project investigated the use of causal deep learning models to predict occurrences of mental health disorders based on a Twitter user's entire post history rather than individual tweets.</p>
+                  <p>We employed RNN and LSTM models for this project as they are causal neural networks good for memory-based NLP tasks. The Twitter-STMHD dataset was used, with tweet text being vectorized with the Word Embeddings method.</p>
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
