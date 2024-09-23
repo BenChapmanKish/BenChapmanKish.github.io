@@ -3,6 +3,8 @@
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    display: flex;
+    align-items: center;
     .portfolio-link {
       position: relative;
       display: block;

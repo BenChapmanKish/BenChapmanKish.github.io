@@ -317,13 +317,16 @@
                   <h4>Using a Distributed ML Server Network to match Applicants to Job Openings on a Job Board</h4>
                   <h4>2022</h4>
                   <hr class="star-primary">
+
                   <img class="img-fluid img-centered" src="img/portfolio/pathways_diagram.png" alt="">
+
                   <p>For my Capstone Project (FYDP), I designed from scratch a distributed dynamic machine learning platform that learns from user reviews to match applicants with job openings on a professional network such as Glassdoor/LinkedIn.</p>
                   <p>This was a massive project that did build on an existing FYDP project from the year prior, but which involved the novel design of several major systems all on my own and took several terms to complete.</p>
-                  <p>To achieve my project specifications and requirements, I implemented custom data and transport layers to maximize service throughput and minimize latency between the client, master server/load balancer, and slave servers.</p>
+                  <p>To achieve my project specifications and requirements, I implemented custom data and transport layers to maximize service throughput and minimize latency between the client, main server/load balancer, and backend ML servers.</p>
                   <p>I also created a custom fault-tolerant load balancer that can connect to new server instances while running, and selects the best backend server based on speed, uptime, and model accuracy for a given task.</p>
-                  <p>On top of all that, I wrote custom ML servers that each have partial database caches kept in sync by the master server, and that each contain several instances of neural networks that are optimized for different tasks.</p>
+                  <p>On top of all that, I wrote custom backend ML servers that each maintain partial database caches kept in sync by the main server, and that each contain multiple instances of neural networks that are optimized for different tasks.</p>
                   <p>This was the single largest solo project I've ever worked on, and it goes far beyond just software. I invite you to read my full project report below!</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -336,6 +339,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -362,8 +366,12 @@
                   <h2>Music Genre Recognition on the FMA Dataset</h2>
                   <h4>2022</h4>
                   <hr class="star-primary">
+
+                  <img class="img-fluid img-centered" src="img/portfolio/mgr_content.png" alt="">
+
                   <p>This project explored the use of convolutional and recurrent deep learning models, either sequentially (CRNNs) or in parallel (PR-CNNs), to perform music genre recognition on input audio files.</p>
                   <p>The Free Music Archive dataset was used, where audio signals were vectorized by the use of Mel-frequency cepstral coefficients as input to the networks.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -381,6 +389,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -407,8 +416,12 @@
                   <h2>Early Detection of Depression using Twitter Post History</h2>
                   <h4>2024</h4>
                   <hr class="star-primary">
+
+                  <img class="img-fluid img-centered" src="img/portfolio/edd_arch.png" alt="">
+
                   <p>This project investigated the use of causal deep learning models to predict occurrences of mental health disorders based on a Twitter user's entire post history rather than individual tweets.</p>
                   <p>We employed RNN and LSTM models for this project as they are causal neural networks good for memory-based NLP tasks. The Twitter-STMHD dataset was used, with tweet text being vectorized with the Word Embeddings method.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -416,6 +429,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -442,8 +456,20 @@
                   <h2>DecorAssist</h2>
                   <h4>DeltaHacks IV</h4>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/deltahacks_ios_home.png" alt="">
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img class="img-fluid img-centered" src="img/portfolio/deltahacks_ios_login.png" alt="">
+                      </div>
+                      <div class="col">
+                        <img class="img-fluid img-centered" src="img/portfolio/deltahacks_ios_home.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+
                   <p>A service to provide interior decoration advice to ordinary users. Backend and API written in Python, with MongoDB for storage. iOS client programmed in Swift.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -461,6 +487,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -487,10 +514,12 @@
                   <h2>GroupStudy</h2>
                   <h4>Waterloo EngHack Winter '17</h4>
                   <hr class="star-primary">
+                  
                   <img class="img-fluid" src="img/portfolio/enghack_demo.jpg" alt="">
-                  </div>
+
                   <p>An Android app for connecting students in study groups. Written in Java, featuring Facebook authentication and Firebase real-time database.</p>
                   <p>Placed top 10 in the hackathon.</p>
+
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -503,6 +532,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -529,10 +559,11 @@
                   <h2>BlackMirror</h2>
                   <h4>Hack the Tribe 2018</h4>
                   <hr class="star-primary">
-                  <div class="col-lg-8 mx-auto">
-                    <img class="img-fluid" src="img/portfolio/tribehacks_remote.png" alt="">
-                  </div>
+
+                  <img class="img-fluid" src="img/portfolio/tribehacks_remote.png" alt="">
+
                   <p>A real life Raspberry Pi-powered smart mirror. Powered by <a href="https://magicmirror.builders/">MagicMirror²</a>, with our own custom modules added on. I also wrote a companion app in Swift to control the mirror.</p>
+                  
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -559,11 +590,23 @@
                   <h2>QuickPic</h2>
                   <h4>2018</h4>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/quickpic_profile.png" alt="">
+
+                  <div class="container"></div>
+                    <div class="row">
+                      <div class="col">
+                        <img class="img-fluid img-centered" src="img/portfolio/quickpic_login.png" alt="">
+                      </div>
+                      <div class="col">
+                        <img class="img-fluid img-centered" src="img/portfolio/quickpic_profile.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  
                   <p>QuickPic is an app that lets you take a pic, make some fun edits, and send it to your friends!</p>
                   <p>The iOS client is written in Swift and supports logging in through Firebase authentication, has a fully-featured camera and lets you overlay text on the image you just took.</p>
                   <p>Users can send pictures to their friends, and check their inbox to see what their friends have been sending. Users can also add new friends at any time, change their display name that their friends see, and view some stats about their usage of the app.</p>
                   <p>The backend is written in Node and Express using Firebase functions, and uses Cloud Firestore and Cloud Storage to maintain user data and facilitate sending pictures to other users.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -571,6 +614,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -597,9 +641,12 @@
                   <h2>Slack SuperBot</h2>
                   <h4>2016</h4>
                   <hr class="star-primary">
+
                   <img class="img-fluid img-centered" src="img/portfolio/slackbot.png" alt="">
+                  
                   <p>Superbot is a multi-purpose slack bot for entertainment with your team members. It was written in Python, and communicates with the Slack, Wikipedia, Google, and Reddit APIs.</p>
                   <p>Its features include an anonymous chat channel, and the ability to generate messages and stories about certain topics or in the writing style of certain people using Markov chains.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -607,6 +654,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -633,10 +681,13 @@
                   <h2>Pebble Apps</h2>
                   <h4>2015 – 2016</h4>
                   <hr class="star-primary">
+
                   <img class="img-fluid img-centered" src="img/portfolio/pebble_apps.png" alt="">
+
                   <p>Back when Pebble was still around, I wrote several watchfaces and apps for it, gaining thousands of downloads on the Pebble marketplace.</p>
                   <p>I originally taught myself C just to start developing for Pebble, so I could make apps and watchfaces that I wanted but didn't exist.</p>
                   <p>Several of my most popular watchfaces and apps are listed below.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -656,6 +707,7 @@
                       <a href="https://github.com/BenChapmanKish/ColdWarSim2K15">Cold War Simulator 2K15</a>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -681,11 +733,14 @@
                 <div class="modal-body">
                   <h2>QuickPic</h2>
                   <hr class="star-primary">
+
                   <img class="img-fluid img-centered" src="img/portfolio/quickpic_profile.png" alt="">
+
                   <p>QuickPic is an app that lets you take a pic, make some fun edits, and send it to your friends!</p>
                   <p>The iOS client is written in Swift and supports logging in through Firebase authentication, has a fully-featured camera and lets you overlay text on the image you just took.</p>
                   <p>Users can send pictures to their friends, and check their inbox to see what their friends have been sending. Users can also add new friends at any time, change their display name that their friends see, and view some stats about their usage of the app.</p>
                   <p>The backend is written in Node and Express using Firebase functions, and uses Cloud Firestore and Cloud Storage to maintain user data and facilitate sending pictures to other users.</p>
+                  
                   <ul class="list-inline item-details">
                     <li>
                       <strong>
@@ -693,6 +748,7 @@
                       </strong>
                     </li>
                   </ul>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
